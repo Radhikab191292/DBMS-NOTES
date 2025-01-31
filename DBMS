@@ -1,1 +1,80 @@
-dhsfiho
+STORED PROCEDURE
+__________________
+we write once a complex query and use them for multiple times the same query
+stored procedure contains multiple sql statements that can be executed in a single unit
+So if you have an SQL query that you write over and over again, save it as a stored procedure, and then just call it to execute it.
+we can pass the parameters to the procedure
+
+BENIFITS
+Reusability
+Security
+Easier maintainance
+
+INDEX
+------------
+type
+single_colum index
+composite index
+unique index
+
+allowing database to find the rows very quickly
+improves the speed of data retrieval
+fast execution
+time efficieny
+indexes require additional storage slow down DML operations.
+ query
+create index sal_ind on employee (salary asc); 
+
+VIEWS
+----------
+virtual table
+efficient way of accessing secured way of accessing
+no physical existence
+it is used for simple way of accessing the data
+it is for security: in table the user given the completer access if we create the view for that then we can not show the confidential data
+views create a virtual table
+Query:
+create view male_date as select id,name,age from employee whre gende=male;
+
+GRANT:
+grant the permissions to users
+REVOKE:
+take the permissions from user
+
+NORMALISATION
+is used to reduce the redundancy and improves the data integrity
+This involves dividing large tables into smaller defining relationships between them to ensure consisten
+cy and avoid anomalies.
+
+DENORMALISATION
+it is the database optimisation technique which we add redundant data to one or more tables
+the process of taking normalised data and making non normalised
+
+where applied ro single rows and having applied ro groupes
+
+CURSORS
+-----------
+it is used to store the data retrieve the data and manipulate the data
+it is a temporary memory
+It is used to fetch more than one record at a time
+The cursor hold more than one row but process rows one by one
+the set of rows hold by the cursor is active set
+---Types---
+implicit cursor
+explicit cursor
+
+TRIGGERS
+---------
+Triggers automatically executed when there is any changes in the database
+such as insert,delete,update
+it tracks the changes in the databes
+ex: salary changes of employees
+--adv--
+Auditing
+it prevents invalid transaction
+prevents data consistency
+
+
+
+
+
